@@ -1,50 +1,61 @@
-*{
+/* Fuente estilo Gameboy */
+* {
     font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
     background-image: url(./img/ce9eeb5b1114993b7f9676a11d7d8d4e72e4ea9c_hq.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
-
-.pokedex {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    position: relative;
+}
+
+/* Contenedor principal */
+.pokedex {
     background-image: url(./img/14bd686faedccee521a84e293f50b6.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 3/5;
+    position: relative;
 }
+
 
 .pokedex__formulario {
     position: absolute;
+    bottom: 22.6%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    bottom: 8.9rem;
-    left: 36rem;
+    width: 80%;
+    justify-content: center;
 }
 
 .pokedex__input {
-    width: 16rem;
+    flex: 1;
     padding: 0.5rem;
     background: transparent;
     border: none;
+    color: black;
+    font-size: 0.6rem;
 }
 
 .pokedex__input:focus {
     outline: none;
+    background: transparent;
+    box-shadow: none;
 }
 
 .pokedex__button {
@@ -53,23 +64,25 @@ body {
     color: white;
     border: none;
     border-radius: 0.3rem;
+    font-size: 0.6rem;
     cursor: pointer;
 }
 
+
 ul {
     position: absolute;
-    bottom: 4%;
-    left: 51%;
+    bottom: 7.7%;
+    left: 53%;
     transform: translateX(-50%);
-    max-height: 120px;
+    width: 47.2%;
+    max-height: 5.2rem;
     overflow-y: auto;
-    width: 200px;
-    height: 6rem;
     border-radius: 0.5rem;
-    z-index: 9;
+    z-index: 10;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0.3rem;
+    scrollbar-width: thin;
+    scrollbar-color: #333 transparent;
 }
 
 ul li {
@@ -77,15 +90,18 @@ ul li {
     text-align: center;
     cursor: pointer;
     border-bottom: 1px solid #ccc;
+    color: black;
+    background-color: transparent;
 }
+
 
 .pokedex__resultado {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 25rem;
-    height: 25rem;
+    width: 80%;
+    height: 50%;
     overflow: hidden;
     z-index: 5;
     display: flex;
@@ -94,4 +110,5 @@ ul li {
     justify-content: center;
     border-radius: 1rem;
     text-align: center;
+    color: black;
 }
