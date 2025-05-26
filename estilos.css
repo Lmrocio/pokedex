@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url(ce9eeb5b1114993b7f9676a11d7d8d4e72e4ea9c_hq.jpg);
+    background-image: url(img/ce9eeb5b1114993b7f9676a11d7d8d4e72e4ea9c_hq.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     height: 100vh;
     position: relative;
-    background-image: url(14bd686faedccee521a84e293f50b6.jpg);
+    background-image: url(img/14bd686faedccee521a84e293f50b6.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
