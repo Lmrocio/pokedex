@@ -117,7 +117,7 @@ if (paginaActual === 'index.html' || paginaActual === '') {
                 const habilidadesArray = data.abilities.slice(0, 2).map(h => h.ability.name);
                 habilidades.textContent = 'Habilidades: ' + habilidadesArray.join(', ');
                 img.src = data.sprites.front_default;
-                img.style.width = '150px';
+                img.style.width = '100px';
 
                 // Botón para volver al index
                 botonVolver.textContent = 'Volver';
