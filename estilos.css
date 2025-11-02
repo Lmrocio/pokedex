@@ -3,29 +3,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    --var-purple: #d590d5;
 }
 
 body {
-    background-image: url(./img/ce9eeb5b1114993b7f9676a11d7d8d4e72e4ea9c_hq.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(img/fondoPokemon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 .pokedex {
-    background-image: url(./img/14bd686faedccee521a84e293f50b6.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 90vw;
     max-width: 400px;
     aspect-ratio: 3/5;
     position: relative;
+
+    background-image: url(img/pokedex.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -34,6 +38,7 @@ body {
     bottom: 22.6%;
     left: 50%;
     transform: translateX(-50%);
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,7 +62,7 @@ body {
     box-shadow: none;
 }
 
-.pokedex__button {
+button {
     padding: 0.4rem 1rem;
     background-color: #e74c3c;
     color: white;
